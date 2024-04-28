@@ -8,9 +8,13 @@ import com.hazelcast.client.properties.ClientProperty;
 import com.hazelcast.config.GlobalSerializerConfig;
 import com.hazelcast.config.SerializationConfig;
 import com.hazelcast.core.HazelcastInstance;
+import info.jerrinot.subzero.SubZero;
+import info.jerrinot.subzero.relocated.com.esotericsoftware.minlog.Log;
 
 public class HazelcastFactory {
     public static HazelcastInstance getHazelcastInstance(String instanceName, String clusterName, String address) {
+        Log.set(Log.LEVEL_TRACE);
+        System.setProperty("hazelcast.logging.type", "slf4j");
         ClientProperty.METRICS_ENABLED.setSystemProperty("false");
         ClientProperty.STATISTICS_ENABLED.setSystemProperty("false");
         ClientProperty.STATISTICS_PERIOD_SECONDS.setSystemProperty("120");
@@ -29,11 +33,7 @@ public class HazelcastFactory {
         networkConfig.setSmartRouting(true);
         clientConfig.setNetworkConfig(networkConfig);
         clientConfig.setMetricsConfig(new ClientMetricsConfig().setEnabled(false));
-        SerializationConfig serializationConfig = new SerializationConfig();
-        serializationConfig.setGlobalSerializerConfig(new GlobalSerializerConfig()
-                .setClassName("info.jerrinot.subzero.Serializer")
-                .setOverrideJavaSerialization(true));
-        clientConfig.setSerializationConfig(serializationConfig);
+        SubZero.useAsGlobalSerializer(clientConfig);
         return HazelcastClient.newHazelcastClient(clientConfig);
     }
 }

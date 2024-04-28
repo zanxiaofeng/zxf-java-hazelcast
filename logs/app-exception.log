@@ -1,0 +1,139 @@
+04:54:21.916 - [main] INFO  com.hazelcast.internal.metrics.impl.MetricsConfigHelper - Abc [dev] [4.2] Overridden metrics configuration with system property 'hazelcast.client.metrics.enabled'='false' -> 'ClientMetricsConfig.enabled'='false'
+04:54:21.927 - [main] DEBUG com.hazelcast.internal.metrics.impl.MetricsConfigHelper - Abc [dev] [4.2] Collecting debug metrics and sending to diagnostics is disabled
+04:54:21.928 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] MetricsRegistry minimumLevel:INFO
+04:54:21.934 - [main] TRACE com.hazelcast.internal.util.ServiceLoader - Service loader could not load 'META-INF/services/com.hazelcast.PortableHook'. It may be empty or does not exist.
+04:54:22.006 - [main] TRACE com.hazelcast.hibernate.serialization.Hibernate5CacheEntrySerializerHook - Hibernate 5 not available, skipping serializer initialization
+04:54:22.024 - [main] INFO  com.hazelcast.client.impl.spi.ClientInvocationService - Abc [dev] [4.2] Running with 2 response threads, dynamic=true
+04:54:22.032 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=count,metric=invocations.pendingCalls]
+04:54:22.032 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=count,metric=invocations.startedInvocations]
+04:54:22.032 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=count,metric=invocations.maxCurrentInvocations]
+04:54:22.060 - [main] INFO  com.hazelcast.core.LifecycleService - Abc [dev] [4.2] HazelcastClient 4.2 (20210324 - 405cfd1) is STARTING
+04:54:22.061 - [main] INFO  com.hazelcast.core.LifecycleService - Abc [dev] [4.2] HazelcastClient 4.2 (20210324 - 405cfd1) is STARTED
+04:54:22.061 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=runtime.freeMemory]
+04:54:22.061 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=runtime.totalMemory]
+04:54:22.061 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=runtime.maxMemory]
+04:54:22.062 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=runtime.usedMemory]
+04:54:22.062 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=runtime.availableProcessors]
+04:54:22.062 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=runtime.uptime]
+04:54:22.063 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=count,metric=gc.minorCount]
+04:54:22.063 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=ms,metric=gc.minorTime]
+04:54:22.063 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=count,metric=gc.majorCount]
+04:54:22.063 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=ms,metric=gc.majorTime]
+04:54:22.063 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=count,metric=gc.unknownCount]
+04:54:22.064 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=ms,metric=gc.unknownTime]
+04:54:22.065 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=os.committedVirtualMemorySize]
+04:54:22.065 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=os.freePhysicalMemorySize]
+04:54:22.065 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=os.freeSwapSpaceSize]
+04:54:22.065 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=os.processCpuTime]
+04:54:22.065 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=os.totalPhysicalMemorySize]
+04:54:22.065 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=os.totalSwapSpaceSize]
+04:54:22.065 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=os.maxFileDescriptorCount]
+04:54:22.066 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=os.openFileDescriptorCount]
+04:54:22.066 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=os.processCpuLoad]
+04:54:22.066 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=os.systemCpuLoad]
+04:54:22.066 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=os.systemLoadAverage]
+04:54:22.067 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=thread.threadCount]
+04:54:22.067 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=thread.peakThreadCount]
+04:54:22.067 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=thread.daemonThreadCount]
+04:54:22.067 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=thread.totalStartedThreadCount]
+04:54:22.067 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=classloading.loadedClassesCount]
+04:54:22.067 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=classloading.totalLoadedClassesCount]
+04:54:22.068 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [metric=classloading.unloadedClassesCount]
+04:54:22.068 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [dir=user.home,unit=bytes,metric=file.partition.freeSpace]
+04:54:22.068 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [dir=user.home,unit=bytes,metric=file.partition.totalSpace]
+04:54:22.068 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [dir=user.home,unit=bytes,metric=file.partition.usableSpace]
+04:54:22.068 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=bytes,metric=memory.committedHeap]
+04:54:22.069 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=bytes,metric=memory.committedNative]
+04:54:22.069 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=bytes,metric=memory.freeHeap]
+04:54:22.069 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=bytes,metric=memory.maxNative]
+04:54:22.069 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=bytes,metric=memory.usedNative]
+04:54:22.069 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=bytes,metric=memory.freeNative]
+04:54:22.069 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=bytes,metric=memory.maxMetadata]
+04:54:22.069 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=bytes,metric=memory.usedMetadata]
+04:54:22.069 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=bytes,metric=memory.maxHeap]
+04:54:22.069 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=bytes,metric=memory.freePhysical]
+04:54:22.069 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=bytes,metric=memory.totalPhysical]
+04:54:22.069 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=bytes,metric=memory.usedHeap]
+04:54:22.072 - [main] DEBUG com.hazelcast.internal.networking.nio.NioNetworking - Abc [dev] [4.2] TcpIpConnectionManager configured with Non Blocking IO-threading model: 1 input threads and 1 output threads
+04:54:22.072 - [main] DEBUG com.hazelcast.internal.networking.nio.NioNetworking - Abc [dev] [4.2] write through enabled:true
+04:54:22.072 - [main] DEBUG com.hazelcast.internal.networking.nio.NioNetworking - Abc [dev] [4.2] IO threads selector mode is SELECT
+04:54:22.075 - [main] TRACE com.hazelcast.internal.networking.nio.NioThread - Abc [dev] [4.2] Optimized Selector: sun.nio.ch.EPollSelectorImpl
+04:54:22.076 - [main] TRACE com.hazelcast.internal.networking.nio.NioThread - Abc [dev] [4.2] Optimized Selector: sun.nio.ch.EPollSelectorImpl
+04:54:22.077 - [main] TRACE com.hazelcast.internal.networking.nio.iobalancer.IOBalancer - Abc [dev] [4.2] Using normal IO Balancer Strategy.
+04:54:22.077 - [main] TRACE com.hazelcast.internal.networking.nio.iobalancer.IOBalancer - Abc [dev] [4.2] I/O Balancer is disabled as there is only a single a pair of I/O threads. Use the 'hazelcast.io.thread.count' property to increase number of I/O Threads.
+04:54:22.078 - [main] INFO  com.hazelcast.client.impl.connection.ClientConnectionManager - Abc [dev] [4.2] Trying to connect to cluster: dev
+04:54:22.079 - [main] INFO  com.hazelcast.client.impl.connection.ClientConnectionManager - Abc [dev] [4.2] Trying to connect to [localhost]:5701
+04:54:22.083 - [main] TRACE com.hazelcast.internal.networking.nio.NioChannel - Successfully connected to: localhost/127.0.0.1:5701 using socket Socket[addr=localhost/127.0.0.1,port=5701,localport=58731]
+04:54:22.106 - [main] DEBUG com.hazelcast.client.impl.connection.ClientConnectionManager - Abc [dev] [4.2] Checking the cluster: 2fa80697-46f0-4491-8270-236cf22d24be, current cluster: null
+04:54:22.106 - [main] INFO  com.hazelcast.core.LifecycleService - Abc [dev] [4.2] HazelcastClient 4.2 (20210324 - 405cfd1) is CLIENT_CONNECTED
+04:54:22.106 - [main] INFO  com.hazelcast.client.impl.connection.ClientConnectionManager - Abc [dev] [4.2] Authenticated with server [127.0.0.1]:5701:6c6b6cbb-2282-4f9a-8d13-9d9b9e529717, server version: 5.3.2, local address: /127.0.0.1:58731
+04:54:22.107 - [main] INFO  com.hazelcast.internal.diagnostics.Diagnostics - Abc [dev] [4.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+04:54:22.108 - [Abc.internal-1] DEBUG com.hazelcast.client.impl.spi.ClientClusterService - Abc [dev] [4.2] Resetting the member list version 
+04:54:22.109 - [Abc.internal-1] TRACE com.hazelcast.client.impl.spi.ClientListenerService - Abc [dev] [4.2] Register attempt of ClusterViewListenerHandler to ClientConnection{alive=true, connectionId=1, channel=NioChannel{/127.0.0.1:58731->localhost/127.0.0.1:5701}, remoteAddress=[127.0.0.1]:5701, lastReadTime=2024-04-28 04:54:22.103, lastWriteTime=2024-04-28 04:54:22.093, closedTime=never, connected server version=5.3.2}
+04:54:22.110 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=count,metric=listeners.eventQueueSize]
+04:54:22.110 - [main] TRACE com.hazelcast.internal.metrics.impl.MetricsRegistryImpl - Abc [dev] [4.2] Registered probeInstance [unit=count,metric=listeners.eventsProcessed]
+04:54:22.116 - [ForkJoinPool.commonPool-worker-25] TRACE com.hazelcast.client.impl.spi.ClientListenerService - Abc [dev] [4.2] Registered ClusterViewListenerHandler to ClientConnection{alive=true, connectionId=1, channel=NioChannel{/127.0.0.1:58731->localhost/127.0.0.1:5701}, remoteAddress=[127.0.0.1]:5701, lastReadTime=2024-04-28 04:54:22.114, lastWriteTime=2024-04-28 04:54:22.110, closedTime=never, connected server version=5.3.2}
+04:54:22.122 - [Abc.event-1] TRACE com.hazelcast.client.impl.spi.ClientClusterService - Abc [dev] [4.2] Handling new snapshot with membership version: 1, membersString 
+
+Members [1] {
+	Member [127.0.0.1]:5701 - 6c6b6cbb-2282-4f9a-8d13-9d9b9e529717
+}
+
+04:54:22.123 - [Abc.event-1] DEBUG com.hazelcast.client.impl.spi.ClientClusterService - Abc [dev] [4.2] There are internal addresses of members used in the config. The client will use internal addresses
+04:54:22.123 - [Abc.event-1] INFO  com.hazelcast.client.impl.spi.ClientClusterService - Abc [dev] [4.2] 
+
+Members [1] {
+	Member [127.0.0.1]:5701 - 6c6b6cbb-2282-4f9a-8d13-9d9b9e529717
+}
+
+04:54:22.133 - [main] TRACE com.hazelcast.internal.util.ServiceLoader - Service loader could not load 'META-INF/services/com.hazelcast.client.impl.spi.ClientProxyDescriptorProvider'. It may be empty or does not exist.
+04:54:22.135 - [Abc.eventRegistration-] TRACE com.hazelcast.client.impl.spi.ClientListenerService - Abc [dev] [4.2] Register attempt of ClientListenerRegistration{codec=com.hazelcast.client.impl.spi.impl.ClientInvocationServiceImpl$1@c07d624, handler=com.hazelcast.client.impl.spi.impl.ClientInvocationServiceImpl$BackupEventHandler@490549c0} to ClientConnection{alive=true, connectionId=1, channel=NioChannel{/127.0.0.1:58731->localhost/127.0.0.1:5701}, remoteAddress=[127.0.0.1]:5701, lastReadTime=2024-04-28 04:54:22.114, lastWriteTime=2024-04-28 04:54:22.110, closedTime=never, connected server version=5.3.2}
+04:54:22.139 - [Abc.eventRegistration-] TRACE com.hazelcast.client.impl.spi.ClientListenerService - Abc [dev] [4.2] Registered ClientListenerRegistration{codec=com.hazelcast.client.impl.spi.impl.ClientInvocationServiceImpl$1@c07d624, handler=com.hazelcast.client.impl.spi.impl.ClientInvocationServiceImpl$BackupEventHandler@490549c0} to ClientConnection{alive=true, connectionId=1, channel=NioChannel{/127.0.0.1:58731->localhost/127.0.0.1:5701}, remoteAddress=[127.0.0.1]:5701, lastReadTime=2024-04-28 04:54:22.138, lastWriteTime=2024-04-28 04:54:22.135, closedTime=never, connected server version=5.3.2}
+start
+04:54:22.144 - [main] TRACE com.hazelcast.config.Config - No configuration found for my.map, using default config!
+04:54:22.156 - [main] TRACE com.hazelcast.client.impl.spi.ClientInvocationService - Abc [dev] [4.2] Partition owner is not assigned yet
+end
+04:54:22.279 - [Abc.event-1] TRACE com.hazelcast.client.impl.spi.ClientPartitionService - Abc [dev] [4.2] Handling new partition table with  partitionStateVersion: 1
+04:54:22.280 - [Abc.event-1] TRACE com.hazelcast.client.impl.spi.ClientPartitionService - Abc [dev] [4.2] Event coming from a new connection. Old connection: null, new connection ClientConnection{alive=true, connectionId=1, channel=NioChannel{/127.0.0.1:58731->localhost/127.0.0.1:5701}, remoteAddress=[127.0.0.1]:5701, lastReadTime=2024-04-28 04:54:22.277, lastWriteTime=2024-04-28 04:54:22.156, closedTime=never, connected server version=5.3.2}
+04:54:22.280 - [Abc.event-1] DEBUG com.hazelcast.client.impl.spi.ClientPartitionService - Abc [dev] [4.2] Applied partition table with partitionStateVersion : 1
+04:54:28.238 - [hz.Abc.IO.thread-in-0] TRACE com.hazelcast.client.impl.spi.ClientInvocationService - Abc [dev] [4.2] Invocation got an exception ClientInvocation{clientMessage = ClientMessage{connection=null, length=129, operation=Map.ExecuteOnKey, isRetryable=false, correlationId=7, messageType=12e00, isEvent=false, isfragmented=false}, objectName = my.map, target = partition 103, sentConnection = null}, invoke count : 1, exception : class com.hazelcast.nio.serialization.HazelcastSerializationException, message : No DataSerializerFactory registered for namespace: 2002
+04:54:28.242 - [main] INFO  com.hazelcast.core.LifecycleService - Abc [dev] [4.2] HazelcastClient 4.2 (20210324 - 405cfd1) is SHUTTING_DOWN
+04:54:28.244 - [main] TRACE com.hazelcast.client.impl.connection.tcp.TcpClientConnection - Abc [dev] [4.2] ClientConnection{alive=false, connectionId=1, channel=NioChannel{/127.0.0.1:58731->localhost/127.0.0.1:5701}, remoteAddress=[127.0.0.1]:5701, lastReadTime=2024-04-28 04:54:28.234, lastWriteTime=2024-04-28 04:54:28.221, closedTime=2024-04-28 04:54:28.243, connected server version=5.3.2} closed. Reason: Hazelcast client is shutting down
+04:54:28.246 - [main] INFO  com.hazelcast.client.impl.connection.ClientConnectionManager - Abc [dev] [4.2] Removed connection to endpoint: [127.0.0.1]:5701:6c6b6cbb-2282-4f9a-8d13-9d9b9e529717, connection: ClientConnection{alive=false, connectionId=1, channel=NioChannel{/127.0.0.1:58731->localhost/127.0.0.1:5701}, remoteAddress=[127.0.0.1]:5701, lastReadTime=2024-04-28 04:54:28.234, lastWriteTime=2024-04-28 04:54:28.221, closedTime=2024-04-28 04:54:28.243, connected server version=5.3.2}
+04:54:28.246 - [main] INFO  com.hazelcast.core.LifecycleService - Abc [dev] [4.2] HazelcastClient 4.2 (20210324 - 405cfd1) is CLIENT_DISCONNECTED
+04:54:28.246 - [main] TRACE com.hazelcast.internal.networking.nio.NioNetworking - Abc [dev] [4.2] Shutting down IO Threads... Total: 2
+04:54:28.246 - [hz.Abc.IO.thread-in-0] TRACE com.hazelcast.internal.networking.nio.NioThread - Abc [dev] [4.2] Closing selector for:hz.Abc.IO.thread-in-0
+04:54:28.246 - [hz.Abc.IO.thread-in-0] TRACE com.hazelcast.internal.networking.nio.NioThread - Abc [dev] [4.2] hz.Abc.IO.thread-in-0 finished
+04:54:28.246 - [hz.Abc.IO.thread-out-0] TRACE com.hazelcast.internal.networking.nio.NioThread - Abc [dev] [4.2] Closing selector for:hz.Abc.IO.thread-out-0
+04:54:28.247 - [hz.Abc.IO.thread-out-0] TRACE com.hazelcast.internal.networking.nio.NioThread - Abc [dev] [4.2] hz.Abc.IO.thread-out-0 finished
+04:54:28.247 - [main] INFO  com.hazelcast.core.LifecycleService - Abc [dev] [4.2] HazelcastClient 4.2 (20210324 - 405cfd1) is SHUTDOWN
+Exception in thread "main" com.hazelcast.nio.serialization.HazelcastSerializationException: No DataSerializerFactory registered for namespace: 2002
+	at com.hazelcast.internal.serialization.impl.DataSerializableSerializer.readInternal(DataSerializableSerializer.java:146)
+	at com.hazelcast.internal.serialization.impl.DataSerializableSerializer.read(DataSerializableSerializer.java:113)
+	at com.hazelcast.internal.serialization.impl.DataSerializableSerializer.read(DataSerializableSerializer.java:52)
+	at com.hazelcast.internal.serialization.impl.StreamSerializerAdapter.read(StreamSerializerAdapter.java:44)
+	at com.hazelcast.internal.serialization.impl.AbstractSerializationService.toObject(AbstractSerializationService.java:271)
+	at com.hazelcast.client.impl.protocol.task.map.MapExecuteOnKeyMessageTask.prepareOperation(MapExecuteOnKeyMessageTask.java:42)
+	at com.hazelcast.client.impl.protocol.task.AbstractPartitionMessageTask.processInternal(AbstractPartitionMessageTask.java:45)
+	at com.hazelcast.client.impl.protocol.task.AbstractAsyncMessageTask.processMessage(AbstractAsyncMessageTask.java:71)
+	at com.hazelcast.client.impl.protocol.task.AbstractMessageTask.initializeAndProcessMessage(AbstractMessageTask.java:169)
+	at com.hazelcast.client.impl.protocol.task.AbstractMessageTask.run(AbstractMessageTask.java:132)
+	at com.hazelcast.spi.impl.operationservice.impl.OperationRunnerImpl.run(OperationRunnerImpl.java:198)
+	at com.hazelcast.spi.impl.operationexecutor.impl.OperationThread.process(OperationThread.java:212)
+	at com.hazelcast.spi.impl.operationexecutor.impl.OperationThread.process(OperationThread.java:146)
+	at com.hazelcast.spi.impl.operationexecutor.impl.OperationThread.loop(OperationThread.java:134)
+	at com.hazelcast.spi.impl.operationexecutor.impl.OperationThread.executeRun(OperationThread.java:115)
+	at com.hazelcast.internal.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:111)
+	at ------ submitted from ------.()
+	at com.hazelcast.internal.util.ExceptionUtil.cloneExceptionWithFixedAsyncStackTrace(ExceptionUtil.java:279)
+	at com.hazelcast.spi.impl.operationservice.impl.InvocationFuture.returnOrThrowWithGetConventions(InvocationFuture.java:112)
+	at com.hazelcast.client.impl.spi.impl.ClientInvocationFuture.resolveAndThrowIfException(ClientInvocationFuture.java:95)
+	at com.hazelcast.client.impl.spi.impl.ClientInvocationFuture.resolveAndThrowIfException(ClientInvocationFuture.java:40)
+	at com.hazelcast.spi.impl.AbstractInvocationFuture.get(AbstractInvocationFuture.java:617)
+	at com.hazelcast.client.impl.spi.ClientProxy.invokeOnPartition(ClientProxy.java:188)
+	at com.hazelcast.client.impl.spi.ClientProxy.invoke(ClientProxy.java:182)
+	at com.hazelcast.client.impl.proxy.ClientMapProxy.executeOnKeyInternal(ClientMapProxy.java:1365)
+	at com.hazelcast.client.impl.proxy.ClientMapProxy.executeOnKey(ClientMapProxy.java:1357)
+	at zxf.hazelcast.HazelcastTests.main(HazelcastTests.java:22)
+
+Process finished with exit code 1

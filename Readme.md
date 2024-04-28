@@ -9,6 +9,21 @@
 - com.hazelcast.config.SerializationConfig
 - com.hazelcast.config.GlobalSerializerConfig
 
+# Key classes for Hazelcast log
+- ILogger com.hazelcast.logging.Logger.getLogger(Class clazz)
+- com.hazelcast.logging.ILogger
+- com.hazelcast.logging.Log4jFactory.Log4jLogger
+- com.hazelcast.logging.Log4j2Factory.Log4j2Logger
+- com.hazelcast.logging.Slf4jFactory.Slf4jLogger
+- com.hazelcast.client.impl.clientside.ClientLoggingService.DefaultLogger
+- com.hazelcast.logging.LoggerFactory
+- com.hazelcast.logging.Log4jFactory
+- com.hazelcast.logging.Log4j2Factory
+- com.hazelcast.logging.Slf4jFactory
+- com.hazelcast.logging.LoggingService
+- com.hazelcast.client.impl.clientside.ClientLoggingService
+- com.hazelcast.logging.impl.LoggingServiceImpl
+
 # Key classes for Hazelcast Serialization
 - com.hazelcast.nio.serialization.DataSerializable
 - com.hazelcast.nio.serialization.IdentifiedDataSerializable
@@ -48,6 +63,7 @@
 - com.hazelcast.spi.impl.operationservice.ReadonlyOperation
 - com.hazelcast.map.impl.operation.MapOperation
 - com.hazelcast.map.impl.operation.GetOperation
+- com.hazelcast.map.impl.operation.PutOperation
 - com.hazelcast.scheduledexecutor.impl.operations.GetStatisticsOperation
 - com.hazelcast.client.impl.spi.impl.ClientInvocation
 - void com.hazelcast.client.impl.spi.impl.ClientInvocation.notify(ClientMessage message)
@@ -62,6 +78,9 @@
 - com.hazelcast.internal.networking.Channel;
 - com.hazelcast.internal.networking.ChannelInitializer;
 - com.hazelcast.client.impl.connection.tcp.ClientPlainChannelInitializer
+- com.hazelcast.client.impl.protocol.codec.MapPutCodec
+- com.hazelcast.client.impl.protocol.codec.MapExecuteOnKeyCodec
+- 
 
 # 异常 - 服务器端异常会在客户端还原
 ## APP Thread
@@ -78,3 +97,10 @@
 - Throwable com.hazelcast.client.impl.protocol.ClientExceptionFactory.createException(ClientMessage message)
 - void com.hazelcast.client.impl.spi.impl.ClientInvocation.notifyException(long correlationId, Throwable exception)
 - void com.hazelcast.client.impl.spi.impl.ClientInvocation.completeExceptionally(Throwable t)
+
+# How to test
+## Start Hazelcast server
+- docker-compose up
+## Start scapy
+- python ./tcp-connection-monitor.py 127.0.0.1 127.0.0.1 5701 > hazelcast-scapy.log
+## Start App
