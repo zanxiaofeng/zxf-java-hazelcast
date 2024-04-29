@@ -1,0 +1,18 @@
+hazelcast-5_1  | 2024-04-29 13:25:01,211 [TRACE] [hz.nostalgic_hamilton.partition-operation.thread-3] [c.h.c.i.p.t.m.MapExecuteOnKeyMessageTask]: [127.0.0.1]:5701 [dev] [5.3.2] While executing request: com.hazelcast.client.impl.protocol.codec.MapExecuteOnKeyCodec$RequestParameters@506f7a29 -> No DataSerializerFactory registered for namespace: 2002
+hazelcast-5_1  | com.hazelcast.nio.serialization.HazelcastSerializationException: No DataSerializerFactory registered for namespace: 2002
+hazelcast-5_1  |        at com.hazelcast.internal.serialization.impl.DataSerializableSerializer.readInternal(DataSerializableSerializer.java:146) ~[hazelcast-5.3.2.jar:5.3.2]
+hazelcast-5_1  |        at com.hazelcast.internal.serialization.impl.DataSerializableSerializer.read(DataSerializableSerializer.java:113) ~[hazelcast-5.3.2.jar:5.3.2]
+hazelcast-5_1  |        at com.hazelcast.internal.serialization.impl.DataSerializableSerializer.read(DataSerializableSerializer.java:52) ~[hazelcast-5.3.2.jar:5.3.2]
+hazelcast-5_1  |        at com.hazelcast.internal.serialization.impl.StreamSerializerAdapter.read(StreamSerializerAdapter.java:44) ~[hazelcast-5.3.2.jar:5.3.2]
+hazelcast-5_1  |        at com.hazelcast.internal.serialization.impl.AbstractSerializationService.toObject(AbstractSerializationService.java:271) ~[hazelcast-5.3.2.jar:5.3.2]
+hazelcast-5_1  |        at com.hazelcast.client.impl.protocol.task.map.MapExecuteOnKeyMessageTask.prepareOperation(MapExecuteOnKeyMessageTask.java:42) ~[hazelcast-5.3.2.jar:5.3.2]
+hazelcast-5_1  |        at com.hazelcast.client.impl.protocol.task.AbstractPartitionMessageTask.processInternal(AbstractPartitionMessageTask.java:45) ~[hazelcast-5.3.2.jar:5.3.2]
+hazelcast-5_1  |        at com.hazelcast.client.impl.protocol.task.AbstractAsyncMessageTask.processMessage(AbstractAsyncMessageTask.java:71) ~[hazelcast-5.3.2.jar:5.3.2]
+hazelcast-5_1  |        at com.hazelcast.client.impl.protocol.task.AbstractMessageTask.initializeAndProcessMessage(AbstractMessageTask.java:169) [hazelcast-5.3.2.jar:5.3.2]
+hazelcast-5_1  |        at com.hazelcast.client.impl.protocol.task.AbstractMessageTask.run(AbstractMessageTask.java:132) [hazelcast-5.3.2.jar:5.3.2]
+hazelcast-5_1  |        at com.hazelcast.spi.impl.operationservice.impl.OperationRunnerImpl.run(OperationRunnerImpl.java:198) [hazelcast-5.3.2.jar:5.3.2]
+hazelcast-5_1  |        at com.hazelcast.spi.impl.operationexecutor.impl.OperationThread.process(OperationThread.java:212) [hazelcast-5.3.2.jar:5.3.2]
+hazelcast-5_1  |        at com.hazelcast.spi.impl.operationexecutor.impl.OperationThread.process(OperationThread.java:146) [hazelcast-5.3.2.jar:5.3.2]
+hazelcast-5_1  |        at com.hazelcast.spi.impl.operationexecutor.impl.OperationThread.loop(OperationThread.java:134) [hazelcast-5.3.2.jar:5.3.2]
+hazelcast-5_1  |        at com.hazelcast.spi.impl.operationexecutor.impl.OperationThread.executeRun(OperationThread.java:115) [hazelcast-5.3.2.jar:5.3.2]
+hazelcast-5_1  |        at com.hazelcast.internal.util.executor.HazelcastManagedThread.run(HazelcastManagedThread.java:111) [hazelcast-5.3.2.jar:5.3.2]

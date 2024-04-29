@@ -6,3 +6,4 @@ services:
       - "5701:5701"
     environment:
       HZ_NETWORK_PUBLICADDRESS: 127.0.0.1:5701
+      LOGGING_LEVEL: TRACE
